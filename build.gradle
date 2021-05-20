@@ -1,0 +1,95 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'io.openliberty.tools:liberty-gradle-plugin:3.1.2'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'war'
+    id "io.openliberty.tools.gradle.Liberty" version "3.1.2"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+wrapper {
+    gradleVersion = '6.8.3'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_15
+    targetCompatibility = JavaVersion.VERSION_15
+}
+
+war{
+    archiveName("${rootProject.name}.war")
+}
+
+ext {
+    liberty.server.var.artifactId = "${rootProject.name}"
+    liberty.server.var.'default.http.port' = '9080'
+    liberty.server.var.'default.https.port' = '9443'
+    liberty.server.clean = true
+    liberty.server.embedded = true
+    //liberty.server.configDirectory = file('/liberty/config/')
+    liberty.server.var.'default.host' = '*'
+}
+
+//liberty {
+//    dev {
+//        skipDefaultPorts = true
+//        dockerRunOpts="-p 9090:9000 -p 9453:9443 -p 7788:7777"
+//        dockerfile = file("Dockerfile.Devc")
+//    }
+//}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    providedCompile 'org.eclipse.microprofile:microprofile:3.2'
+    compileOnly(group: "jakarta.platform", name: "jakarta.jakartaee-api", version: "8.0.0")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    libertyRuntime(group: "io.openliberty", name: "openliberty-kernel", version: "21.0.0.3")
+}
+
+task openBrowser {
+    description = 'Open browser to the running application'
+    doLast {
+        String port = liberty.server.var.'default.http.port'
+        String context = liberty.server.var.'app.context.root'
+        String URL = "http://localhost:" + port + "/" + context + "/"
+        println URL
+        java.awt.Desktop.desktop.browse URL.toURI()
+        java.awt.Desktop.desktop.browse file("$buildDir/reports/tests/test/index.html").toURI()
+    }
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed', 'standardOut'
+        exceptionFormat 'full'
+    }
+
+    systemProperty 'http.port', liberty.server.var.'default.http.port'
+    systemProperty 'context.root',  liberty.server.var.'app.context.root'
+}
+
+// tasks depends[]
+libertyDev.dependsOn 'clean'
+libertyDevc.dependsOn 'clean'
+clean.dependsOn 'libertyStop'
+libertyStop.finalizedBy 'clean'
+
+test.dependsOn 'libertyStart'
+test.finalizedBy(openBrowser, libertyStop)
+clean.dependsOn 'libertyStop'
+libertyStop.finalizedBy 'clean'

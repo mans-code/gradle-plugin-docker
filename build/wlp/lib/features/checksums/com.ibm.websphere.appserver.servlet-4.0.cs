@@ -1,0 +1,22 @@
+#Thu May 20 17:05:03 AST 2021
+lib/com.ibm.ws.session_1.0.50.jar=fe1fda7798daf9815b5d533e92173948
+lib/com.ibm.ws.webserver.plugin.runtime.interfaces_1.0.50.jar=f56dd385fd93b35473bfd137344c017d
+lib/com.ibm.ws.webcontainer_1.1.50.jar=977cf26e3098af502704530bb1c90b2b
+lib/com.ibm.ws.webserver.plugin.runtime_1.0.50.jar=ba3c461d09d856f30bbb5562fcac822a
+lib/com.ibm.ws.http.plugin.merge_1.0.50.jar=334b5e320d3adecacd2db26d5ed7ca34
+lib/com.ibm.ws.webcontainer.servlet.3.1_1.0.50.jar=835dbe1eab3c41c6d8d045135a8236f3
+lib/com.ibm.ws.webcontainer.servlet.4.0.factories_1.0.50.jar=cf13d8138a4489ad32897d240b05f73e
+lib/com.ibm.ws.webcontainer.cors_1.0.50.jar=d075413c33744cd3d41db9ee3ff8f093
+lib/com.ibm.ws.org.apache.commons.fileupload_1.0.50.jar=fbbbdfcecf54faec6f9c2fdb62e452f9
+lib/com.ibm.ws.webcontainer.servlet.4.0_1.0.50.jar=bcc1b79c96551c6bbb34c71d9c9ff758
+lib/features/com.ibm.websphere.appserver.servlet-4.0.mf=25d4d12e8a7eaf59fe0380f6e53c5737
+lib/com.ibm.ws.app.manager.war_1.0.50.jar=8b3d74275105df8d949f5a686f1a52d9
+lib/com.ibm.ws.webserver.plugin.utility_1.0.50.jar=41fbcd6deeb802c1742396b41b80245d
+lib/com.ibm.websphere.security_1.1.50.jar=627ff5158801348ce8f9c5910e507629
+bin/pluginUtility=fb7b666a6651d943b55885a234040ad1
+dev/api/ibm/javadoc/com.ibm.websphere.appserver.api.servlet_1.1-javadoc.zip=88a9ad8d8e777294b9bf09e84083840e
+lib/com.ibm.ws.org.apache.commons.io_1.0.50.jar=8eb4c448a8ba31f94a0614267d690506
+bin/tools/ws-webserverPluginutil.jar=e7e3f4189227360c7fa592916da1de47
+dev/api/ibm/com.ibm.websphere.appserver.api.servlet_1.1.50.jar=0b26893160d9cf14740b8aed108ec3ad
+lib/com.ibm.ws.managedobject_1.0.50.jar=8f4f6a5a6bc01e91517b22585d46f2cc
+bin/pluginUtility.bat=c456259c61849720c0b61e3934a03207

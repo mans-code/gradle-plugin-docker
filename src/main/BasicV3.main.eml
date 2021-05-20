@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$/../../src/main"/>
+	<lib name="Gradle: jakarta.platform:jakarta.jakartaee-api:8.0.0" scope="PROVIDED"/>
+	<lib name="Gradle: javax.enterprise:cdi-api:2.0" scope="PROVIDED"/>
+	<lib name="Gradle: javax.ws.rs:javax.ws.rs-api:2.1" scope="PROVIDED"/>
+	<lib name="Gradle: javax.json.bind:javax.json.bind-api:1.0" scope="PROVIDED"/>
+	<lib name="Gradle: javax.json:javax.json-api:1.1" scope="PROVIDED"/>
+	<lib name="Gradle: javax.annotation:javax.annotation-api:1.3" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.config:microprofile-config-api:1.3" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.fault-tolerance:microprofile-fault-tolerance-api:2.0" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.health:microprofile-health-api:2.1" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.metrics:microprofile-metrics-api:2.2" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.jwt:microprofile-jwt-auth-api:1.1" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.openapi:microprofile-openapi-api:1.1" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.rest.client:microprofile-rest-client-api:1.3" scope="PROVIDED"/>
+	<lib name="Gradle: org.eclipse.microprofile.opentracing:microprofile-opentracing-api:1.3" scope="PROVIDED"/>
+	<lib name="Gradle: javax.el:javax.el-api:3.0.0" scope="PROVIDED"/>
+	<lib name="Gradle: javax.interceptor:javax.interceptor-api:1.2" scope="PROVIDED"/>
+	<lib name="Gradle: javax.inject:javax.inject:1" scope="PROVIDED"/>
+	<lib name="Gradle: org.osgi:org.osgi.annotation.versioning:1.0.0" scope="PROVIDED"/>
+	<levels>
+		<level name="Gradle: jakarta.platform:jakarta.jakartaee-api:8.0.0" value="project"/>
+		<level name="Gradle: javax.enterprise:cdi-api:2.0" value="project"/>
+		<level name="Gradle: javax.ws.rs:javax.ws.rs-api:2.1" value="project"/>
+		<level name="Gradle: javax.json.bind:javax.json.bind-api:1.0" value="project"/>
+		<level name="Gradle: javax.json:javax.json-api:1.1" value="project"/>
+		<level name="Gradle: javax.annotation:javax.annotation-api:1.3" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.config:microprofile-config-api:1.3" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.fault-tolerance:microprofile-fault-tolerance-api:2.0" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.health:microprofile-health-api:2.1" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.metrics:microprofile-metrics-api:2.2" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.jwt:microprofile-jwt-auth-api:1.1" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.openapi:microprofile-openapi-api:1.1" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.rest.client:microprofile-rest-client-api:1.3" value="project"/>
+		<level name="Gradle: org.eclipse.microprofile.opentracing:microprofile-opentracing-api:1.3" value="project"/>
+		<level name="Gradle: javax.el:javax.el-api:3.0.0" value="project"/>
+		<level name="Gradle: javax.interceptor:javax.interceptor-api:1.2" value="project"/>
+		<level name="Gradle: javax.inject:javax.inject:1" value="project"/>
+		<level name="Gradle: org.osgi:org.osgi.annotation.versioning:1.0.0" value="project"/>
+	</levels>
+</component>

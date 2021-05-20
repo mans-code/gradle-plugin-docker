@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<liberty-plugin-config version="2.0">
+  <installDirectory>C:\Users\user\Desktop\expriement\BasicV3\build\wlp</installDirectory>
+  <assemblyArtifact>
+    <groupId>io.openliberty</groupId>
+    <artifactId>openliberty-kernel</artifactId>
+    <version>21.0.0.3</version>
+    <type>zip</type>
+  </assemblyArtifact>
+  <assemblyArchive>C:\Users\user\.gradle\caches\modules-2\files-2.1\io.openliberty\openliberty-kernel\21.0.0.3\c9eef099515b0b083103338c5743daa43bfe5440\openliberty-kernel-21.0.0.3.zip</assemblyArchive>
+  <servers>
+    <server>
+      <userDirectory>C:\Users\user\Desktop\expriement\BasicV3\build\wlp\usr</userDirectory>
+      <serverDirectory>C:\Users\user\Desktop\expriement\BasicV3\build\wlp\usr\servers\defaultServer</serverDirectory>
+      <serverOutputDirectory>C:\Users\user\Desktop\expriement\BasicV3\build\wlp\usr\servers\defaultServer</serverOutputDirectory>
+      <serverName>defaultServer</serverName>
+      <configDirectory>C:\Users\user\Desktop\expriement\BasicV3\src\main\liberty\config</configDirectory>
+      <looseApplication>true</looseApplication>
+      <stripVersion>false</stripVersion>
+      <applications>
+        <application>
+          <appsDirectory>apps</appsDirectory>
+          <applicationFilename>BasicV3.war.xml</applicationFilename>
+          <warSourceDirectory>src/main/webapp</warSourceDirectory>
+          <projectType>war</projectType>
+        </application>
+      </applications>
+    </server>
+  </servers>
+</liberty-plugin-config>
